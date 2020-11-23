@@ -1,1 +1,13 @@
-var app = new Vue({});
+var app = new Vue({
+    el : '#root',
+    data : {
+
+    },
+    methods : {
+
+    },
+
+    mounted() {
+        
+    },
+});
