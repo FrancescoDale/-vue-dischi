@@ -14,3 +14,9 @@ main {
     height: calc(100% - 60px);
     display: flex;
 }
+
+.cardbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
