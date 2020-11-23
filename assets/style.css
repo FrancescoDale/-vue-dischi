@@ -15,8 +15,24 @@ main {
     display: flex;
 }
 
+h3 {
+
+}
+
+span {
+
+}
+
 .cardbox {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    height: 400px;
+    background-color: red;
+}
+
+.cardbox img {
+    max-width: 100%;
 }
