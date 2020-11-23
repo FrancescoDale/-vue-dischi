@@ -8,6 +8,12 @@ var app = new Vue({
     },
 
     mounted() {
-        
+        axios
+        //chiamata
+        .get('https://flynn.boolean.careers/exercises/api/array/music')
+        //gestisco la risposta
+        .then((response) => {
+
+        });
     },
 });
