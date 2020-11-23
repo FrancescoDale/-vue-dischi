@@ -20,15 +20,17 @@
                     </div>
                 </header>
                 <main>
-                    <div class="cardbox">
-                        <img src="" alt="">
-                        <h3 class="text-center text-capitalize"></h3>
-                        <span class="author text-center text-capitalize"></span>
-                        <span class="year text-center"></span>
+                    <div class="cardbox" v-for="item in albums">
+                        <img src="" alt="item.title">
+                        <h3 class="text-center text-capitalize">{{ item.title}}</h3>
+                        <span class="author text-center text-capitalize">{{ item.author }}</span>
+                        <span class="year text-center">{{ item.year }}</span>
                     </div>
                 </main>
             </div>
         </div>
+
+        <script src="assets/main.js" charset="utf-8"></script>
 
     </body>
 </html>

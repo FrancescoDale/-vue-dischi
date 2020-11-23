@@ -1,7 +1,7 @@
 var app = new Vue({
     el : '#root',
     data : {
-
+        albums : []
     },
     methods : {
 
@@ -9,11 +9,11 @@ var app = new Vue({
 
     mounted() {
         axios
-        //chiamata
+        // chiamata API
         .get('https://flynn.boolean.careers/exercises/api/array/music')
-        //gestisco la risposta
+        // gestisco la risposta modificando l'array
         .then((response) => {
-
+            this.albums = response.data.response;
         });
     },
 });
