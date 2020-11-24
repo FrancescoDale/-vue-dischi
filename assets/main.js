@@ -2,10 +2,13 @@ var app = new Vue({
     el : '#root',
     data : {
         albums : [],
-        genres : []
+        genres : [],
+        selectedGenre : ''
     },
     methods : {
-
+        selected() {
+            alert('ciao');
+        },
     },
 
     mounted() {
