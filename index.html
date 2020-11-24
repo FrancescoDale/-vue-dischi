@@ -17,11 +17,11 @@
                 <header>
                     <h1 class="text-center text-capitalize mt-4">vue dischi</h1>
                 </header>
+                <select v-model="selectedGenre" class="text-capitalize" name="">
+                    <option value="">all genres</option>
+                    <option v-for="genre in genres" :value="genre">{{ genre }}</option>
+                </select>
                 <main>
-                    <select v-model="selectedGenre" class="text-capitalize" name="">
-                        <option value="">all genres</option>
-                        <option v-for="genre in genres" :value="genre">{{ genre }}</option>
-                    </select>
                     <div class="cardbox" v-for="item in albums" v-if="selectedGenre == item.genre || selectedGenre == ''">
                         <img :src="item.poster" :alt="item.title">
                         <h3 class="text-center text-capitalize">{{ item.title}}</h3>
