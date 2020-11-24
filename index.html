@@ -22,7 +22,7 @@
                     <option v-for="genre in genres" :value="genre">{{ genre }}</option>
                 </select>
                 <main>
-                    <div class="cardbox" v-for="item in albums" v-if="selectedGenre == item.genre || selectedGenre == ''">
+                    <div class="cardbox" v-for="item in albums" v-if="(selectedGenre == item.genre || selectedGenre == '')">
                         <img :src="item.poster" :alt="item.title">
                         <h3 class="text-center text-capitalize">{{ item.title}}</h3>
                         <span class="author text-center text-capitalize">{{ item.author }}</span>

@@ -6,9 +6,7 @@ var app = new Vue({
         selectedGenre : ''
     },
     methods : {
-        selected() {
-            alert('ciao');
-        },
+        
     },
 
     mounted() {
