@@ -18,6 +18,10 @@
                     <h1 class="text-center text-capitalize mt-4">vue dischi</h1>
                 </header>
                 <main>
+                    <select class="" name="">
+                        <option class="text-capitalize" value="">all genres</option>
+                        <option class="text-capitalize" v-for="genre in genres" value="">{{ genre }}</option>
+                    </select>
                     <div class="cardbox" v-for="item in albums">
                         <img :src="item.poster" alt="item.title">
                         <h3 class="text-center text-capitalize">{{ item.title}}</h3>
